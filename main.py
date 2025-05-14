@@ -2,12 +2,12 @@
 
 import sys
 
-from windows.login import Login
+from windows.EventManager import EventManager
 from PyQt6.QtWidgets import QApplication
 
 def main():
     app = QApplication(sys.argv)
-    ex = Login()
+    ex = EventManager()
     ex.show()
     sys.exit(app.exec())
     
